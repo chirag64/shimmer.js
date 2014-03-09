@@ -1,4 +1,3 @@
-
 //Define shimmer function
 function shimmer(elem) {
   
@@ -16,6 +15,7 @@ function shimmer(elem) {
     console.warn("Sorry, this is not supported in your browser yet");
     return;
   }
+
   //Apply styling
   inner.style.webkitBackgroundClip = "text";
   inner.style.color = "transparent";
