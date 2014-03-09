@@ -11,6 +11,15 @@ function shimmer(elem) {
   const maxWidthOfShimmer = 20;
   var textColor = window.getComputedStyle(elem).backgroundColor;
 
+  //Check if webkitBackgroundClip is supported
+  if (inner.style.webkitBackgroundClip === undefined) {
+    console.warn("Sorry, this is not supported in your browser yet");
+    return;
+  }
+  //Apply styling
+  inner.style.webkitBackgroundClip = "text";
+  inner.style.color = "transparent";
+
   //Define setInterval to regularly update background within 'time' in 'iterations'
   var sInterval = setInterval(function() {
     count ++;
