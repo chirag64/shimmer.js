@@ -3,6 +3,8 @@ shimmer.js
 
 Inspired by [facebook / Shimmer](https://github.com/facebook/Shimmer)
 
+![Shimmer](https://raw.github.com/chirag64/shimmer.js/master/image.gif)
+
 Note:
 -----
 Shimmer.js is currently only supported by Webkit-based / Blink-based browsers.
